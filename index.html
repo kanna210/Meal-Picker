@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meal Picker</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+
+    <h1>🍽️ Meal Picker</h1>
+
+</header>
+
+<div class="container">
+
+    <div class="left-panel">
+
+        <input
+            type="text"
+            id="search"
+            placeholder="🔍 Search meals..."
+        >
+
+        <button id="randomBtn">
+            🍑 Random Pick 🎲
+        </button>
+
+        <button id="addMealBtn">
+            ➕ Add Meal
+        </button>
+
+        <div class="mode-section">
+            <p class="mode-title">Mode</p>
+
+            <div class="mode-buttons">
+                <button id="eliminateModeBtn">Eliminate</button>
+                <button id="keepModeBtn">Keep</button>
+            </div>
+
+            <p id="modeDescription"></p>
+        </div>
+
+        <button id="resetVotesBtn">↻ Reset Votes</button>
+
+        <div id="meal-list"></div>
+
+    </div>
+
+    <div id="meal-details">
+
+        <h2>Welcome!</h2>
+
+        <img id="meal-image">
+
+        <p id="meal-description">
+            Select a meal or press Random Pick.
+        </p>
+
+        <div id="voteSection" style="display:none;">
+
+            <hr>
+
+            <div id="voteSummary"></div>
+
+            <h3>Your Vote</h3>
+
+            <div id="voteButtons">
+
+                <button id="goodBtn">🟢 Good</button>
+
+                <button id="noBtn">🔴 No</button>
+
+            </div>
+
+            <div id="currentVote"></div>
+
+        </div>
+        
+        <button id="deleteMealBtn" style="display:none;">🗑 Delete Meal</button>
+
+    </div>
+
+    <div id="userModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <h2>Welcome!</h2>
+
+        <p>Who are you?</p>
+
+        <button id="kannaBtn">Kanna</button>
+
+        <button id="dylanBtn">Dylan</button>
+
+    </div>
+
+</div>
+
+    <div id="addMealModal" class="modal hidden">
+
+    <div class="modal-content">
+
+        <h2>Add a Meal</h2>
+
+        <label for="mealName">Meal name</label>
+        <input id="mealName" type="text" placeholder="e.g. Gyudon">
+
+        <label for="mealDesc">Description</label>
+        <textarea id="mealDesc" placeholder="Short description"></textarea>
+
+        <label for="mealImage">Image path</label>
+        <input id="mealImage" type="text" placeholder="images/gyudon.jpg">
+
+        <button id="saveMeal">Save Meal</button>
+        <button id="closeModal">Cancel</button>
+
+    </div>
+
+</div>
+
+</div>
+
+<script type="module" src="firebase.js"></script>
+<script type="module" src="script.js"></script>
+<div id="splashEffect"></div>
+
+</body>
+</html>
