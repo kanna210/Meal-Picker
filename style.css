@@ -165,6 +165,7 @@ header {
     object-fit: cover;
     border-radius: 50%;
     display: block;
+    border: 2px solid black;
 }
 
 #randomBtn:hover {
@@ -634,10 +635,6 @@ header h1 {
 #saveMeal {
     font-weight: 600;
     font-size: 16px;
-}
-
-#closeModal {
-    color: #666;
 }
 
 #closeModal {
