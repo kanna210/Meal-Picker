@@ -152,6 +152,21 @@ header {
     color: white;
 }
 
+#randomBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+.random-btn-icon {
+    width: 56px;
+    height: 56px;
+    object-fit: cover;
+    border-radius: 50%;
+    display: block;
+}
+
 #randomBtn:hover {
     background: #6D9071;
 }
@@ -619,6 +634,10 @@ header h1 {
 #saveMeal {
     font-weight: 600;
     font-size: 16px;
+}
+
+#closeModal {
+    color: #666;
 }
 
 #closeModal {
